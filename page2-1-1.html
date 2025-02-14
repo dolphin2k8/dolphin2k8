@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header input[type="text"] {
+            padding: 15px;
+            width: 300px;
+            font-size: 16px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+    </style>
+    <center><h1 style="color: wheat"> Bijan - Tổ lái AOV</h1></center>
+<header>
+</head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh điều hướng</title>
+    <style>
+        .breadcrumb {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            font-size: 18px;
+        }
+
+        .breadcrumb li {
+            margin-right: 10px;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .breadcrumb li::after {
+            content: "<";
+            margin-left: 10px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <ul class="breadcrumb">
+        <li><a href="bijan%201.html">Trang chủ</a></li>
+        <li><a href="page2.html">Cách chơi</a></li>
+        <li><a href="page2-1.html">Chiêu thức</a></li>
+        <li><a href="page2-1-1.html">Nội tại</a></li>
+    </ul>
+    <script>
+        const breadcrumb = document.querySelector('.breadcrumb');
+
+        const links = breadcrumb.querySelectorAll('li');
+        
+        links.forEach((link, index) => {
+            if (index < links.length - 1) {
+                link.innerHTML += ' <';
+            }
+        });
+    </script>
+</body>
+    </html>
+</div>
+</nav>
+<style>
+    body {
+        background-image: url('2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: -1;
+    }
+    
+
+    .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+</style>
+
+<div style="position: absolute; top: 20%; left: 0; transform: overflow-y: auto; text-align: left; color: wheat; z-index: 2; padding-left: 50px;">
+    <h1 style="font-size: 48px; margin-bottom: 30px;">Nội tại </h1>
+    
+    <div style="max-width: 700px; font-size: 18px; line-height: 1.6;">
+        <p> Bijan có những 2 nội tại như sau:</p>
+        <p> Nội tại 1: Sau mỗi 6 giây, Bijan cường hóa đòn đánh thường kế tiếp gây thêm sát thương vật lý và hồi máu cho bản thân.</p>    
+        <p> Nội tại 2: Khi nhận sát thương vật lý hoặc sát thương chuẩn hoặc tung chiêu trúng mục tiêu, Bijan sẽ được tăng thêm 20 giáp vật lý, tăng lên theo cấp tướng. Nội tại có thể cộng dồn tối đa 10 lần </p>
+        <p> 2 nội tại này khiến Bijan vừa có lượng sát thương lớn cùng với khả năng chống chịu cực khoẻ đầu và giữa game. </p>
+        <div style="position: absolute; top: 60%; left: 800px; transform: translateY(-50%); text-align: left; color: wheat; z-index: 2;">
+            <div style="max-width: 1000px; font-size: 18px; line-height: 1.6;">
+            <img src="2-1-1.png" alt="Bijan đường trên" style="max-width: 480px; height: auto; margin: 20px 0; border: 3px solid wheat; border-radius: 10px;">
+    </ul>
+
+
+    </div>
+</div>
+</body>
+</html>

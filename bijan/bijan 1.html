@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header input[type="text"] {
+            padding: 15px;
+            width: 300px;
+            font-size: 16px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+    </style>
+<header>
+<nav>
+    <a href="page1.html">Trang bị</a>
+    <a href="page2.html">Cách chơi</a>
+    <a href="page3.html">Skin</a>
+</header>
+    <center><h1 style="color: wheat"> Bijan - Tổ lái AOV</h1></center>
+<header>
+</head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh điều hướng</title>
+    <style>
+        .breadcrumb {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            font-size: 18px;
+        }
+
+        .breadcrumb li {
+            margin-right: 10px;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .breadcrumb li::after {
+            content: "<";
+            margin-left: 10px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+    <body>
+    
+        <ul class="breadcrumb" id="breadcrumb">
+            <li><a href="bijan1.html">Trang chủ</a></li>
+        </ul>
+        <script>
+            const breadcrumb = document.getElementById('breadcrumb');
+            const pageTitle = document.getElementById('page-title');
+    
+            const pages = [
+                { name: "Trang chủ", url: "bijan%201.html" },
+                { name: "Trang bị", url: "page1.html" },
+                { name: "Cách chơi", url: "page2.html" },
+                { name: "Skin", url: "page3.html" }
+            ];
+    
+            function updateBreadcrumb(currentPage) {
+                breadcrumb.innerHTML = '';
+    
+                pages.slice(0, currentPage + 1).forEach((page, index) => {
+                    const li = document.createElement('li');
+                    const a = document.createElement('a');
+                    a.href = page.url;
+                    a.textContent = page.name;
+                    li.appendChild(a);
+                    breadcrumb.appendChild(li);
+    
+                    if (index < currentPage) {
+                        li.innerHTML += ' <';
+                    }
+                });
+    
+                pageTitle.textContent = pages[currentPage].name;
+            }
+    
+            const currentPageIndex = window.location.pathname.includes('page1') ? 1 :
+                                      window.location.pathname.includes('page2') ? 2 :
+                                      window.location.pathname.includes('page3') ? 3 : 0;
+    
+            updateBreadcrumb(currentPageIndex);
+        </script>
+    
+    </body>
+    </html>
+</div>
+</nav>
+<style>
+    body {
+        background-image: url('2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+  
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+    }
+    
+   
+    .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+</style>
+
+<div style="position: absolute; top: 30%; left: 0; transform: overflow-y: auto; text-align: left; color: wheat; z-index: 2; padding-left: 50px;">
+    <h1 style="font-size: 48px; margin-bottom: 30px;">Bijan</h1>
+    
+    <div style="max-width: 700px; font-size: 18px; line-height: 1.6;">
+        <p>Bijan là một trong những vị tướng mạnh nhất khoảng thời gian đầu và giữa game với khả năng gây sát thương cực lớn và cơ động linh hoạt. Về cuối game vị tướng này còn kết hớp với những vị tướng khác để tạo ra những pha giao tranh đẹp mắt. Tướng này có thể đảm nhận nhiều vị trí khác nhau như đi rừng, đi đường trên hoặc hỗ trợ.</p>
+
+        <p>Với bộ kỹ năng độc đáo của mình, Bijan có thể:</p>
+        <ul style="list-style-position: inside; padding: 0;">
+            <li>Gây sát thương lớn trong thời gian ngắn</li>
+            <li>Di chuyển nhanh chóng trên bản đồ</li>
+            <li>Kiểm soát đám đông hiệu quả</li>
+            <li>Mở giao tranh tốt</li>
+        </ul>
+
+        <p>Để tìm hiểu thêm về cách chơi Bijan hiệu quả, bạn có thể tham khảo các mục Trang bị, Cách chơi và Skin ở menu phía trên.</p>
+    </div>
+</div>
+</body>
+</html>

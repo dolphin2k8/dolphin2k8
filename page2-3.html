@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header input[type="text"] {
+            padding: 15px;
+            width: 300px;
+            font-size: 16px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+    </style>
+    <center><h1 style="color: wheat"> Bijan - Tổ lái AOV</h1></center>
+<header>
+</head>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh điều hướng</title>
+    <style>
+        .breadcrumb {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            font-size: 18px;
+        }
+
+        .breadcrumb li {
+            margin-right: 10px;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .breadcrumb li::after {
+            content: "<";
+            margin-left: 10px;
+        }
+
+        .breadcrumb li:last-child::after {
+            content: "";
+        }
+
+        .breadcrumb a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <ul class="breadcrumb">
+        <li><a href="bijan%201.html">Trang chủ</a></li>
+        <li><a href="page2.html">Cách chơi</a></li>
+        <li><a href="page2-3.html">Tướng kết hợp</a></li>
+    </ul>
+    <script>
+        const breadcrumb = document.querySelector('.breadcrumb');
+
+        const links = breadcrumb.querySelectorAll('li');
+        
+        links.forEach((link, index) => {
+            if (index < links.length - 1) {
+                link.innerHTML += ' <';
+            }
+        });
+    </script>
+</body>
+    </html>
+</div>
+</nav>
+<style>
+    body {
+        background-image: url('2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+    }
+    
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: -1;
+    }
+    
+
+    .content {
+        position: relative;
+        z-index: 1;
+        color: white;
+    }
+</style>
+
+<div style="position: absolute; top: 20%; left: 0; transform: overflow-y: auto; text-align: left; color: wheat; z-index: 2; padding-left: 50px;">
+    <h1 style="font-size: 48px; margin-bottom: 30px;">Tướng phối hợp </h1>
+    
+    <div style="max-width: 700px; font-size: 18px; line-height: 1.6;">
+        <p> Vì ulti Bijan có khả năng chở thêm một đồng đội ở phía sau, nên Bijan có thể chở thêm một tướng có khả năng sốc sát thương lớn nhưng có phần tù do không thể lướt/ di chuyển nhanh.</p>    
+        <p> 2 vị tướng ad recc dùng chung với Bijan là.</p>
+        <p> Top 2: Celica. Với chiêu cuối dựng pháo tấn công diện rộng rất lớn nhưng không thể di chuyển. Bijan sẽ chở cô nàng để vừa gây sát thương nổ lớn từ khoảng cách rất xa. </p>
+        <p> Top 1: Triệu vân. Combo "bạn thân ơi" khiến bất cứ thằng nào bị ghim hoặc đôi setlove bên team địch phải bỏ điện thoại đi ngủ, vì 2 vị tướng này dồn khống chế, sát thương cực nhanh, kể cả trốn trong tế đoàn cũng không thể thoát được =)) </p>
+        <p> Mời mọi người xem video để chiêm ngưỡng sức mạnh khủng khiếp của combo "Bạn thân ơi" nhé.</p>
+        <div style="position: absolute; left: 100px; width: 100%; max-width: 800px; margin: 20px 0;">
+            <video width="100%" controls style="border: 3px solid wheat; border-radius: 10px;">
+                <source src="banthanoi.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
